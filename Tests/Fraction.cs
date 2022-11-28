@@ -12,13 +12,14 @@ namespace Tests
             var c = new Fraction(5, 6);
             var d = new Fraction(2, 6);
             var f = new Fraction(1, 3);
+            var e = new Fraction(2, 3);
             Assert.True(c == a + b);
             Assert.False(d == a + c);
-            Assert.True(Fraction.Sum(b, f) == b + f);
+            Assert.True(e == b + f);
 
         }
         
-       /* [Test]
+        [Test]
         public void TestSub()
         {
             var a = new Fraction(-5, 10);
@@ -28,7 +29,7 @@ namespace Tests
             Assert.True(d == a - b);
             Assert.False(a == b - c);
         }
-
+        
         [Test]
         public void TestMulti()
         {
@@ -38,7 +39,7 @@ namespace Tests
             Assert.True(b == 4 * a);
             Assert.False(b == -5 * a);
         }
-       */
+       
         [Test]
         public void TestReduction()
         {

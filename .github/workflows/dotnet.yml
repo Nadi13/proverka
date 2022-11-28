@@ -10,7 +10,7 @@ on:
       tags:
         description: 'Test scenario tags'  
 
-  pull_request:
+  push:
     branches: [ "main"]
 
 jobs:
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ShipGame
+        working-directory: Proverka
 
     steps:
     - uses: actions/checkout@v3
@@ -37,8 +37,4 @@ jobs:
       uses: coverallsapp/github-action@master   
       with:
         github-token: ${{ secrets.GITHUB_TOKEN }}
-<<<<<<< HEAD
-        path-to-lcov: ShipGame/Tests/TestResults/coverage.info
-=======
-        path-to-lcov: ShipGame/Tests/TestResults/coverage.info
->>>>>>> e968ed9a8ae9a487a5d5da6164f7448b16de6485
+        path-to-lcov: /home/runner/work/proverka/proverka/Tests/coverage.json

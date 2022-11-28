@@ -15,8 +15,8 @@ namespace Tests
             Assert.False(d == a + c);
 
         }
-
-        [Test]
+        
+       /* [Test]
         public void TestSub()
         {
             var a = new Fraction(-5, 10);
@@ -36,7 +36,7 @@ namespace Tests
             Assert.True(b == 4 * a);
             Assert.False(b == -5 * a);
         }
-
+       */
         [Test]
         public void TestReduction()
         {
@@ -46,7 +46,7 @@ namespace Tests
             Assert.True(b == Fraction.Reduction(a));
             Assert.False(c == Fraction.Reduction(a));
         }
-
+        
 
         [Test]
         public void TestEquality()

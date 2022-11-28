@@ -29,7 +29,7 @@
         {
             return Sum(a, b);
         }
-
+        /*
         public static Fraction Sub(Fraction a, Fraction b)
         {
             var c = new Fraction(1, 1);
@@ -62,7 +62,7 @@
         {
             return Multi(a, b);
         }
-
+        */
         public static Fraction Reduction(Fraction a)
         {
             int n = Math.Abs(a.numerator);

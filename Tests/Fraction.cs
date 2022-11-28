@@ -11,8 +11,10 @@ namespace Tests
             var b = new Fraction(1, 3);
             var c = new Fraction(5, 6);
             var d = new Fraction(2, 6);
+            var f = new Fraction(1, 3);
             Assert.True(c == a + b);
             Assert.False(d == a + c);
+            Assert.True(Fraction.Sum(b, f) == b + f);
 
         }
         
